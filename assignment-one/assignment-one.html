@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Checkbox</title>
+	<link rel="stylesheet" href="css/common.css">
+</head>
+<body>
+	<form action="">
+		<input type="checkbox" id="option_1">
+		<label for="option_1" class="control_input">Option 1</label>
+		<input type="checkbox" id="option_2">
+		<label for="option_2" class="control_input">Option 2</label>
+		<input type="checkbox" id="option_3">
+		<label for="option_3" class="control_input">Option 3</label>
+	</form>
+	<script type="text/javascript" src='js/jquery-1.12.0.min.js'></script>
+	<script type="text/javascript">
+		$("ul>li>a").on("click",function(){
+			$('ul>li>a').removeClass('active');
+			$(this).addClass('active');
+		});
+	</script>
+</body>
+</html>

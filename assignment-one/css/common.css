@@ -1,0 +1,23 @@
+input
+{
+	display: none;
+}
+
+.control_input:before
+{
+	width: 20px;
+	height: 20px;
+	line-height: 20px;
+	text-align: center;
+	vertical-align: middle;
+	margin: 0 20px;
+	content:"";
+	background-color: orange;
+	display: inline-block;
+	cursor:pointer;
+}
+
+input:checked + .control_input:before
+{
+	content:"\2713";
+}
